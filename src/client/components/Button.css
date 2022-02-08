@@ -1,0 +1,27 @@
+.profile-button {
+    background-color: purple;
+    border-color: purple;
+    color: #FFF;
+    font-family: monospace;
+    font-size: 1rem;
+    border-radius: .2rem;
+    padding: .15rem .3rem;
+    position: relative;
+    left: 10%;
+}
+
+.Button {
+    background-color: purple;
+    border-color: purple;
+    color: #FFF;
+    font-family: monospace;
+    font-size: 1rem;
+    border-radius: .2rem;
+    padding: .15rem .3rem;
+}
+
+.Button.link {
+    background-color: transparent;
+    border-color: black;
+    color: black;
+}

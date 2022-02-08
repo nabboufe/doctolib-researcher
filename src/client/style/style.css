@@ -1,0 +1,49 @@
+.mainContainer {
+    margin: auto;
+    max-width: 100%;
+}
+
+.center {
+    width: 40%;
+    max-width: 70%;
+    margin: auto;
+}
+
+.researchCenter {
+    width: 60%;
+    max-width: 80%;
+    margin: auto;
+}
+
+.left {
+    float: right;
+}
+
+.research {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid green;
+    border-radius: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    vertical-align: middle;
+}
+
+input {
+    width: 70%;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid green;
+    border-radius: 4px;
+}
+
+input:focus {
+    background-color: lightblue;
+}
