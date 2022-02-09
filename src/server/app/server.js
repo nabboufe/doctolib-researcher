@@ -79,7 +79,6 @@ app.post('/doct', async (req, res) => {
         var token = req.cookies['token'];
     
         if (!!token) {
-            console.log('\n\nVOUI\n\n');
             token = jwt.decode(token);
             Users.findOne({
                 where: { username: token.username },
@@ -89,7 +88,7 @@ app.post('/doct', async (req, res) => {
                     var loc = req.body.location;
                     var act = req.body.activity;
     
-                    profile['number'] = '';
+                    profile['number'] = '.';
                     profile['callHours'] = '';
                     profile['UUID'] = user.UUID;
                     profile['researchID'] = req.body.researchID;
@@ -107,6 +106,7 @@ app.post('/doct', async (req, res) => {
                 }
             })  .catch((err) => console.log(err))
         }
+        scraped.number = '';
         res.send(scraped);
 
     })  .catch((err) => console.log(err));

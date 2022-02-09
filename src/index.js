@@ -96,7 +96,7 @@ class App extends React.Component {
             .then(async res => {
                 await res.json()
                 .then(async (tmp) => {
-                    console.log(tmp);
+                    console.log("AH:", tmp);
                     await this.setState({
                         "apiReturn": [...this.state.apiReturn, tmp],
                         "Result": [...this.state.Result,
